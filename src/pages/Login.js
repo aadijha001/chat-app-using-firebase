@@ -69,7 +69,7 @@ const Login = () => {
             onChange={handleChange}
           />
         </div>
-        {error ? <p className="error">{error}</p> : null}
+        {error ? <span className="error">{error}</span> : null}
         <div className="btn_container">
           <button className="btn" disabled={loading}>
             {loading ? "Logging in..." : "Login"}
